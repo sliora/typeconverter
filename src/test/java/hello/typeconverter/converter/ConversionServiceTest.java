@@ -25,7 +25,5 @@ public class ConversionServiceTest {
 
         String ipPortString = conversionService.convert(new IpPort("127.0.0.1", 8080), String.class);
         Assertions.assertThat(ipPortString).isEqualTo("127.0.0.1:8080");
-
-
     }
 }
